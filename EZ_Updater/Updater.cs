@@ -554,9 +554,9 @@ namespace EZ_Updater
             {
                 State = UpdaterState.AssetNotFound;
                 ShortState = UpdaterShortState.Canceled;
-                Message = $"{GitHub_User}/{GitHub_Repository}: {GitHub_Asset} not founded in GitHub releases assets";
+                Message = $"{GitHub_User}/{GitHub_Repository}: {GitHub_Asset} not found in GitHub releases assets";
 
-                Log($"{GitHub_Asset}: not founded in GitHub release assets");
+                Log($"{GitHub_Asset}: not found in GitHub release assets");
                 CanceledSomething();
                 return;
             }
